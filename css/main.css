@@ -13,6 +13,7 @@ html {
   text-size-adjust: 100%;
 
   font-family: sans-serif;
+  text-align: center;
 }
 
 *, *::before, *::after {
@@ -24,7 +25,13 @@ body {
 }
 
 ul {
+  padding: 0;
+  margin: 0;
   list-style-type: none;
+}
+
+h1 {
+  margin: 0;
 }
 
 .btn {
@@ -38,7 +45,30 @@ a:hover {
   color: #fff;
 }
 
-header {
+#current {
+  background-color: #b20953;
+}
+
+.masthead {
   background-color: #e2e2e2;
-  text-align: center;
+}
+
+@media only screen and (min-width: 20em) {
+
+  .nav li {
+    display: inline-block;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  .masthead {
+    text-align: left;
+  }
+
+  nav {
+    text-align: right;
+  }
+
 }
